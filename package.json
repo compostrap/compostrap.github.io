@@ -4,7 +4,7 @@
   "description": "Live preview",
   "main": "gruntfile.js",
   "dependencies": {
-    "sidebar-menu-compostrap": "^1.0.1"
+    "sidebar-menu-compostrap": "^1.0.2"
   },
   "devDependencies": {
     "grunt": "^1.0.4",

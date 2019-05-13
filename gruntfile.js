@@ -11,7 +11,7 @@ module.exports = function(grunt) {
                         'node_modules/font-awesome/css/font-awesome.css',
                         'node_modules/perfect-scrollbar/css/perfect-scrollbar.css',
                         'node_modules/bootstrap/dist/css/bootstrap.css',
-                        'node_modules/sidebar-menu-compostrap/assets/css/sidebar.css',
+                        'node_modules/sidebar-menu-compostrap/dist/css/sidebar.css',
                     ]
                 }]
             }
@@ -49,7 +49,7 @@ module.exports = function(grunt) {
                         'node_modules/popper/dist/popper.js',
                         'node_modules/bootstrap/dist/js/bootstrap.js',
                         'node_modules/nanobar/nanobar.js',
-                        'node_modules/sidebar-menu-compostrap/assets/js/sidebar.menu.js'
+                        'node_modules/sidebar-menu-compostrap/dist/js/sidebar.menu.js'
                     ]
                 }
             }

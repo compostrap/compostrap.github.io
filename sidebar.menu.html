@@ -12,7 +12,7 @@
 	<div class="d-flex nav-fixed" id="wrapper">
 
 		<!-- sidebar -->
-		<nav role="navigation" class="sidebar sidebar-dark rounded-0">
+		<nav role="navigation" id="add-class" class="sidebar sidebar-dark rounded-0">
 
 			<!-- sidebar menu -->
 			<div class="sidebar-menu">
@@ -134,6 +134,19 @@
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 				</p>
+				<h3>Default dark theme</h3>
+				<ul>
+					<li><a href="#" id="dark" class="theme">Dark menu</a></li>
+					<li><a href="#" id="white" class="theme">White menu</a></li>
+				</ul>
+				<h3>Sidebar add color menu</h3>
+				<ul>
+					<li><a href="#" id="magenta" class="theme">Magenta</a></li>
+					<li><a href="#" id="purple" class="theme">Purple</a></li>
+					<li><a href="#" id="orange" class="theme">Orange</a></li>
+					<li><a href="#" id="cyan" class="theme">Cyan</a></li>
+					<li><a href="#" id="green" class="theme">Green</a></li>
+				</ul>
 			</main>
 		</div>
 	</div>
@@ -145,6 +158,42 @@
 			new PerfectScrollbar('.list-scrollbar');
 			const nanobar = new Nanobar();
 			nanobar.go(100);
+			$('.theme').on('click', function () {
+
+				if ($('#add-class').hasClass('sidebar-menu-magenta')) {
+					$('#add-class').removeClass('sidebar-menu-magenta')
+
+				} else if ($('#add-class').hasClass('sidebar-menu-purple')) {
+					$('#add-class').removeClass('sidebar-menu-purple')
+
+				} else if ($('#add-class').hasClass('sidebar-menu-orange')) {
+					$('#add-class').removeClass('sidebar-menu-orange')
+
+				} else if ($('#add-class').hasClass('sidebar-menu-cyan')) {
+					$('#add-class').removeClass('sidebar-menu-cyan')
+
+				} else if ($('#add-class').hasClass('sidebar-menu-green')) {
+					$('#add-class').removeClass('sidebar-menu-green')
+				}
+
+				if ($('#add-class').hasClass('sidebar-dark') && $(this).attr('id') === 'white') {
+					$('#add-class').removeClass('sidebar-dark');
+
+				} else if ($('#add-class').hasClass('sidebar-white') && $(this).attr('id') === 'dark') {
+					$('#add-class').removeClass('sidebar-white');
+				}
+
+				switch ($(this).attr('id')) {
+					case 'dark':    $('#add-class').addClass('sidebar-dark'); break;
+					case 'white':   $('#add-class').addClass('sidebar-white'); break;
+					case 'magenta': $('#add-class').addClass('sidebar-menu-magenta'); break;
+					case 'purple':  $('#add-class').addClass('sidebar-menu-purple'); break;
+					case 'orange':  $('#add-class').addClass('sidebar-menu-orange'); break;
+					case 'cyan':    $('#add-class').addClass('sidebar-menu-cyan'); break;
+					case 'green':   $('#add-class').addClass('sidebar-menu-green'); break;
+				}
+			})
+
 		});
 	</script>
 </body>
