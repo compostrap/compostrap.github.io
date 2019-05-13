@@ -1,0 +1,15 @@
+{
+  "name": "compostrap.github.io",
+  "version": "1.0.0",
+  "description": "Live preview",
+  "main": "gruntfile.js",
+  "dependencies": {
+    "sidebar-menu-compostrap": "^1.0.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-uglify": "^4.0.1"
+  }
+}
