@@ -177,14 +177,14 @@
 			nanobar.go(100);
 			$('.theme').on('click', function () {
 
-                if ($('#add-class').hasClass('sidebar-dark') && $(this).attr('id') === 'white') {
+				const idAttr = $(this).attr('id');
+				if ($('#add-class').hasClass('sidebar-dark') && idAttr === 'white') {
                     $('#add-class').removeClass('sidebar-dark');
 
-                } else if ($('#add-class').hasClass('sidebar-white') && $(this).attr('id') === 'dark') {
+				} else if ($('#add-class').hasClass('sidebar-white') && idAttr === 'dark') {
                     $('#add-class').removeClass('sidebar-white');
-                }
 
-				if ($('#add-class').hasClass('sidebar-menu-magenta')) {
+                } else if ($('#add-class').hasClass('sidebar-menu-magenta')) {
 					$('#add-class').removeClass('sidebar-menu-magenta')
 
 				} else if ($('#add-class').hasClass('sidebar-menu-purple')) {
@@ -200,7 +200,7 @@
 					$('#add-class').removeClass('sidebar-menu-green')
 				}
 
-				switch ($(this).attr('id')) {
+				switch (idAttr) {
 					case 'dark':    $('#add-class').addClass('sidebar-dark'); break;
 					case 'white':   $('#add-class').addClass('sidebar-white'); break;
 					case 'magenta': $('#add-class').addClass('sidebar-menu-magenta'); break;
