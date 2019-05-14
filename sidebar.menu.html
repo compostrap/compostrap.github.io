@@ -177,37 +177,39 @@
 			nanobar.go(100);
 			$('.theme').on('click', function () {
 
-				const idAttr = $(this).attr('id');
-				if ($('#add-class').hasClass('sidebar-dark') && idAttr === 'white') {
-                    $('#add-class').removeClass('sidebar-dark');
+				const idAttr       = $(this).attr('id');
+				const sidebarClass = $('#add-class');
 
-				} else if ($('#add-class').hasClass('sidebar-white') && idAttr === 'dark') {
-                    $('#add-class').removeClass('sidebar-white');
+				if (sidebarClass.hasClass('sidebar-dark') && idAttr === 'white') {
+					sidebarClass.removeClass('sidebar-dark');
 
-                } else if ($('#add-class').hasClass('sidebar-menu-magenta')) {
-					$('#add-class').removeClass('sidebar-menu-magenta')
+				} else if (sidebarClass.hasClass('sidebar-white') && idAttr === 'dark') {
+					sidebarClass.removeClass('sidebar-white');
 
-				} else if ($('#add-class').hasClass('sidebar-menu-purple')) {
-					$('#add-class').removeClass('sidebar-menu-purple')
+                } else if (sidebarClass.hasClass('sidebar-menu-magenta')) {
+					sidebarClass.removeClass('sidebar-menu-magenta')
 
-				} else if ($('#add-class').hasClass('sidebar-menu-orange')) {
-					$('#add-class').removeClass('sidebar-menu-orange')
+				} else if (sidebarClass.hasClass('sidebar-menu-purple')) {
+					sidebarClass.removeClass('sidebar-menu-purple')
 
-				} else if ($('#add-class').hasClass('sidebar-menu-cyan')) {
-					$('#add-class').removeClass('sidebar-menu-cyan')
+				} else if (sidebarClass.hasClass('sidebar-menu-orange')) {
+					sidebarClass.removeClass('sidebar-menu-orange')
 
-				} else if ($('#add-class').hasClass('sidebar-menu-green')) {
-					$('#add-class').removeClass('sidebar-menu-green')
+				} else if (sidebarClass.hasClass('sidebar-menu-cyan')) {
+					sidebarClass.removeClass('sidebar-menu-cyan')
+
+				} else if (sidebarClass.hasClass('sidebar-menu-green')) {
+					sidebarClass.removeClass('sidebar-menu-green')
 				}
 
 				switch (idAttr) {
-					case 'dark':    $('#add-class').addClass('sidebar-dark'); break;
-					case 'white':   $('#add-class').addClass('sidebar-white'); break;
-					case 'magenta': $('#add-class').addClass('sidebar-menu-magenta'); break;
-					case 'purple':  $('#add-class').addClass('sidebar-menu-purple'); break;
-					case 'orange':  $('#add-class').addClass('sidebar-menu-orange'); break;
-					case 'cyan':    $('#add-class').addClass('sidebar-menu-cyan'); break;
-					case 'green':   $('#add-class').addClass('sidebar-menu-green'); break;
+					case 'dark':    sidebarClass.addClass('sidebar-dark'); 			break;
+					case 'white':   sidebarClass.addClass('sidebar-white'); 		break;
+					case 'magenta': sidebarClass.addClass('sidebar-menu-magenta'); 	break;
+					case 'purple':  sidebarClass.addClass('sidebar-menu-purple'); 	break;
+					case 'orange':  sidebarClass.addClass('sidebar-menu-orange'); 	break;
+					case 'cyan':    sidebarClass.addClass('sidebar-menu-cyan'); 	break;
+					case 'green':   sidebarClass.addClass('sidebar-menu-green'); 	break;
 				}
 			})
 
