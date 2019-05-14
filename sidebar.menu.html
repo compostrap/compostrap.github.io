@@ -148,7 +148,7 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				</div>
 				<div class="content-box mb-3">
-					<h3>Default dark theme</h3>
+					<h3>Default theme</h3>
 					<ul class="list-unstyled">
 						<li><a href="#" id="dark" class="theme text-secondary"><span class="theme-box" style="background-color: #3a3f44;"></span>Dark menu</a></li>
 						<li><a href="#" id="white" class="theme text-secondary"><span class="theme-box" style="background-color: white;"></span>White menu</a></li>
@@ -177,6 +177,13 @@
 			nanobar.go(100);
 			$('.theme').on('click', function () {
 
+                if ($('#add-class').hasClass('sidebar-dark') && $(this).attr('id') === 'white') {
+                    $('#add-class').removeClass('sidebar-dark');
+
+                } else if ($('#add-class').hasClass('sidebar-white') && $(this).attr('id') === 'dark') {
+                    $('#add-class').removeClass('sidebar-white');
+                }
+
 				if ($('#add-class').hasClass('sidebar-menu-magenta')) {
 					$('#add-class').removeClass('sidebar-menu-magenta')
 
@@ -191,13 +198,6 @@
 
 				} else if ($('#add-class').hasClass('sidebar-menu-green')) {
 					$('#add-class').removeClass('sidebar-menu-green')
-				}
-
-				if ($('#add-class').hasClass('sidebar-dark') && $(this).attr('id') === 'white') {
-					$('#add-class').removeClass('sidebar-dark');
-
-				} else if ($('#add-class').hasClass('sidebar-white') && $(this).attr('id') === 'dark') {
-					$('#add-class').removeClass('sidebar-white');
 				}
 
 				switch ($(this).attr('id')) {
