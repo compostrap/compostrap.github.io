@@ -6,6 +6,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="www/css/style.min.css">
 	<title>Sidebar menu on bootstrap 4</title>
+	<style>
+		.theme-box {
+			display: inline-block;
+			padding: 0.3125rem;
+			margin-right: 1rem;
+			border: 1px solid #ebebeb;
+			border-radius: 0.1875rem;
+		}
+		.content-box {
+			padding: 1rem;
+			background-color: white;
+		}
+	</style>
 </head>
 
 <body class="bg-light">
@@ -130,23 +143,27 @@
 
 			<!-- main content -->
 			<main role="main" class="container-fluid">
-				<h2>Sidebar menu build on Bootstrap 4</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-				</p>
-				<h3>Default dark theme</h3>
-				<ul>
-					<li><a href="#" id="dark" class="theme">Dark menu</a></li>
-					<li><a href="#" id="white" class="theme">White menu</a></li>
-				</ul>
-				<h3>Sidebar add color menu</h3>
-				<ul>
-					<li><a href="#" id="magenta" class="theme">Magenta</a></li>
-					<li><a href="#" id="purple" class="theme">Purple</a></li>
-					<li><a href="#" id="orange" class="theme">Orange</a></li>
-					<li><a href="#" id="cyan" class="theme">Cyan</a></li>
-					<li><a href="#" id="green" class="theme">Green</a></li>
-				</ul>
+				<div class="content-box mb-3">
+					<h2>Sidebar menu build on Bootstrap 4</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+				<div class="content-box mb-3">
+					<h3>Default dark theme</h3>
+					<ul class="list-unstyled">
+						<li><a href="#" id="dark" class="theme text-secondary"><span class="theme-box" style="background-color: #3a3f44;"></span>Dark menu</a></li>
+						<li><a href="#" id="white" class="theme text-secondary"><span class="theme-box" style="background-color: white;"></span>White menu</a></li>
+					</ul>
+				</div>
+				<div class="content-box mb-3">
+					<h3>Sidebar add color menu</h3>
+					<ul class="list-unstyled">
+						<li><a href="#" id="magenta" class="theme text-secondary"><span class="theme-box" style="background-color: #d93748;"></span>Magenta</a></li>
+						<li><a href="#" id="purple" class="theme text-secondary"><span class="theme-box" style="background-color: #6e49bb;"></span>Purple</a></li>
+						<li><a href="#" id="orange" class="theme text-secondary"><span class="theme-box" style="background-color: #fc7b2d;"></span>Orange</a></li>
+						<li><a href="#" id="cyan" class="theme text-secondary"><span class="theme-box" style="background-color: #097ffa;"></span>Cyan</a></li>
+						<li><a href="#" id="green" class="theme text-secondary"><span class="theme-box" style="background-color: #32a44e;"></span>Green</a></li>
+					</ul>
+				</div>
 			</main>
 		</div>
 	</div>
