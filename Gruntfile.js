@@ -8,7 +8,7 @@ module.exports = function(grunt) {
                 files: [{
                     'www/css/style.min.css': [
                         'node_modules/open-sans-fontface/open-sans.css',
-                        'node_modules/font-awesome/css/font-awesome.css',
+                        'node_modules/@fortawesome/fontawesome-free/css/all.css',
                         'node_modules/perfect-scrollbar/css/perfect-scrollbar.css',
                         'node_modules/bootstrap/dist/css/bootstrap.css',
                         'node_modules/sidebar-menu-compostrap/dist/css/sidebar.css',
@@ -22,9 +22,9 @@ module.exports = function(grunt) {
             main: {
                 files: [{
                     expand: true,
-                    cwd: 'node_modules/font-awesome/fonts/',
+                    cwd: 'node_modules/@fortawesome/fontawesome-free/webfonts/',
                     src: ['**'],
-                    dest: 'www/fonts/'
+                    dest: 'www/webfonts/'
                 },
                     {
                         expand: true,
@@ -60,5 +60,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.registerTask('minify-all', ['cssmin', 'uglify', 'copy']);
+    grunt.registerTask('grunt-all', ['cssmin', 'uglify', 'copy']);
 };
