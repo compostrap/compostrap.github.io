@@ -6,12 +6,17 @@ module.exports = function(grunt) {
         cssmin: {
             target: {
                 files: [{
-                    'www/css/style.min.css': [
+                    'www/css/main.min.css': [
                         'node_modules/open-sans-fontface/open-sans.css',
                         'node_modules/@fortawesome/fontawesome-free/css/all.css',
                         'node_modules/perfect-scrollbar/css/perfect-scrollbar.css',
                         'node_modules/bootstrap/dist/css/bootstrap.css',
+                    ],
+                    'www/css/sidebar.min.css': [
                         'node_modules/sidebar-menu-compostrap/dist/css/sidebar.css',
+                    ],
+                    'www/css/sidebar.2.min.css': [
+                        'node_modules/sidebar-menu-2-compostrap/dist/css/sidebar.css',
                     ]
                 }]
             }
@@ -48,8 +53,13 @@ module.exports = function(grunt) {
                         'node_modules/perfect-scrollbar/dist/perfect-scrollbar.js',
                         'node_modules/popper/dist/popper.js',
                         'node_modules/bootstrap/dist/js/bootstrap.js',
-                        'node_modules/nanobar/nanobar.js',
+                        'node_modules/nanobar/nanobar.js'
+                    ],
+                    'www/js/sidebar.min.js': [
                         'node_modules/sidebar-menu-compostrap/dist/js/sidebar.menu.js'
+                    ],
+                    'www/js/sidebar.2.min.js': [
+                        'node_modules/sidebar-menu-2-compostrap/dist/js/sidebar.menu.js'
                     ]
                 }
             }
