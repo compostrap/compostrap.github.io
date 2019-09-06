@@ -17,6 +17,9 @@ module.exports = function(grunt) {
                     ],
                     'www/css/sidebar.2.min.css': [
                         'node_modules/sidebar-menu-2-compostrap/dist/css/sidebar.css',
+                    ],
+                    'www/css/sidebar.skeleton.min.css': [
+                        'node_modules/sidebar-menu-skeleton-compostrap/dist/css/sidebar.css',
                     ]
                 }]
             }
@@ -60,6 +63,9 @@ module.exports = function(grunt) {
                     ],
                     'www/js/sidebar.2.min.js': [
                         'node_modules/sidebar-menu-2-compostrap/dist/js/sidebar.menu.js'
+                    ],
+                    'www/js/sidebar.skeleton.min.js': [
+                        'node_modules/sidebar-menu-skeleton-compostrap/dist/js/sidebar.menu.js'
                     ]
                 }
             }
