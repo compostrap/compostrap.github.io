@@ -42,6 +42,12 @@ module.exports = function(grunt) {
                         cwd: 'node_modules/open-sans-fontface/fonts/',
                         src: ['**'],
                         dest: 'www/css/fonts/'
+                    },
+                    {
+                        expand: true,
+                        cwd: 'node_modules/navbar-user-logged-compostrap/dist/img/',
+                        src: ['**'],
+                        dest: 'www/img/'
                     }
                 ]
             }
