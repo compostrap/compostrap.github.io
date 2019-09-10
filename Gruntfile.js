@@ -20,6 +20,9 @@ module.exports = function(grunt) {
                     ],
                     'www/css/sidebar.skeleton.min.css': [
                         'node_modules/sidebar-menu-skeleton-compostrap/dist/css/sidebar.css',
+                    ],
+                    'www/css/navbar.logged.min.css': [
+                        'node_modules/navbar-user-logged-compostrap/dist/css/logged.css',
                     ]
                 }]
             }

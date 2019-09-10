@@ -6,7 +6,8 @@
   "dependencies": {
     "sidebar-menu-2-compostrap": "^1.0.1",
     "sidebar-menu-compostrap": "^1.0.5",
-    "sidebar-menu-skeleton-compostrap": "^1.0.0"
+    "sidebar-menu-skeleton-compostrap": "^1.0.0",
+    "navbar-user-logged-compostrap": "^1.0.0"
   },
   "devDependencies": {
     "grunt": "^1.0.4",
