@@ -24,7 +24,7 @@ module.exports = function(grunt) {
                     'www/js/main.min.js': [
                         'node_modules/jquery/dist/jquery.js',
                         'node_modules/bootstrap/dist/js/bootstrap.bundle.js',
-                        'node_modules/sidebar-skeleton-compostrap/dist/js/sidebar.menu.js',
+                        'node_modules/sidebar-skeleton-compostrap/dist/js/sidebar.js',
                     ]
                 }
             }
