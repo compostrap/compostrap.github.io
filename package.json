@@ -1,19 +1,14 @@
 {
   "name": "compostrap.github.io",
   "version": "1.0.0",
-  "description": "Live preview sidebar menu build on Bootstrap 4",
+  "description": "View demo",
   "main": "Gruntfile.js",
   "dependencies": {
-    "navbar-user-logged-compostrap": "^1.0.1",
-    "sidebar-menu-2-compostrap": "^1.0.1",
-    "sidebar-menu-compostrap": "^1.0.5",
-    "sidebar-menu-skeleton-compostrap": "^1.0.0"
+    "sidebar-skeleton-compostrap": "^1.0.0"
   },
   "devDependencies": {
     "grunt": "^1.0.4",
-    "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-cssmin": "^3.0.0",
-    "grunt-contrib-uglify": "^4.0.1",
-    "@fortawesome/fontawesome-free": "^5.10.2"
+    "grunt-contrib-uglify": "^4.0.1"
   }
 }
