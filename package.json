@@ -4,7 +4,7 @@
   "description": "View demo",
   "main": "Gruntfile.js",
   "dependencies": {
-    "sidebar-skeleton-compostrap": "^1.0.8"
+    "sidebar-skeleton-compostrap": "^1.0.9"
   },
   "devDependencies": {
     "grunt": "^1.0.4",
