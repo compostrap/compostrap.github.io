@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -11,7 +12,7 @@
 <body>
 
 <header>
-	<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
 
 		<!-- title -->
 		<a class="navbar-brand" href="#">Sidebar navigation</a>
@@ -23,27 +24,115 @@
 	</nav>
 </header>
 
-<!-- sidebar, content -->
-<div class="d-flex">
+<div class="d-flex wrapper wrapper-navbar-used wrapper-navbar-fixed">
 
-	<!-- sidebar -->
-	<nav role="navigation" class="sidebar sidebar--gray-200 rounded-0" id="navigation">
+	<nav role="navigation" class="sidebar sidebar-gray-200" id="navigation">
 
-		<!-- sidebar menu -->
-		<div class="sidebar__menu">
-			<div class="sidebar__menu--fixed"></div>
-		</div>
+		<!-- sidebar -->
+		<div class="sidebar-menu">
+
+			<!-- sidebar menu -->
+			<div class="sidebar-menu">
+
+				<!-- menu -->
+				<ul class="list list-unstyled list-scrollbar">
+
+					<!-- simple menu -->
+					<li class="list-item">
+
+						<!-- list title -->
+						<p class="list-title text-uppercase">Translate</p>
+
+						<!-- list items -->
+						<ul class="list-unstyled">
+							<li><a href="#" class="list-link">Czech</a></li>
+							<li><a href="#" class="list-link link-current">English</a></li>
+						</ul>
+					</li>
+
+					<!-- multi-level dropdown menu -->
+					<li class="list-item">
+
+						<!-- list title -->
+						<p class="list-title text-uppercase">Dashboard</p>
+
+						<!-- list items, first level -->
+						<ul class="list-unstyled">
+							<li><a href="#" class="list-link"><span class="list-icon"><i class="fas fa-home"></i></span>Home</a></li>
+							<li><a href="#" class="list-link link-arrow link-current"><span class="list-icon"><i class="fas fa-tools"></i></span>Settings</a>
+
+								<!-- list items, second level -->
+								<ul class="list-unstyled list-hidden">
+									<li><a href="#" class="list-link">Timezone</a></li>
+									<li><a href="#" class="list-link link-current">Permissions</a></li>
+									<li><a href="#" class="list-link link-arrow">Maintenance</a>
+
+										<!-- list items, third level -->
+										<ul class="list-unstyled list-hidden">
+											<li><a href="#" class="list-link">On</a></li>
+											<li><a href="#" class="list-link">Off</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+
+							<!-- notice info -->
+							<li>
+								<a href="#" class="list-link">
+									<div class="clearfix">
+										<div class="float-left"><span class="list-icon"><i class="fas fa-bell"></i></span>Notice</div>
+										<div class="float-right">
+											<span class="badge badge-danger">New</span>
+											<span class="badge badge-secondary">4</span>
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</li>
+
+					<!-- multi-level dropdown menu -->
+					<li class="list-item">
+
+						<!-- list title -->
+						<p class="list-title text-uppercase">Coments</p>
+
+						<!-- list items, first level -->
+						<ul class="list-unstyled">
+							<li><a href="#" class="list-link"><span class="list-icon"><i class="fas fa-plus"></i></span>New</a></li>
+							<li><a href="#" class="list-link link-arrow"><span class="list-icon"><i class="fas fa-comment"></i></span>Settings comments</a>
+
+								<!-- list items, second level -->
+								<ul class="list-unstyled list-hidden">
+									<li><a href="#" class="list-link">Disable</a></li>
+									<li><a href="#" class="list-link">Enable</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+
+					<!-- simple menu -->
+					<li class="list-item">
+
+						<!-- list title -->
+						<p class="list-title text-uppercase">Blog</p>
+
+						<!-- list items -->
+						<ul class="list-unstyled">
+							<li><a href="#" class="list-link"><span class="list-icon"><i class="fas fa-plus"></i></span>Add</a></li>
+							<li><a href="#" class="list-link"><span class="list-icon"><i class="fas fa-table"></i></span>List</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
 	</nav>
 
-	<!-- content -->
-	<main role="main" class="container-fluid"></main>
-</div>
+	<div class="container-fluid">
 
-<footer class="fixed-bottom text-right pt-3 pr-5 pb-2 d-none d-sm-block">
-	<p class="text-muted">
-		<a href="https://github.com/accgit" class="text-muted text-decoration-none" title="Author's website">&copy Accgit</a>
-	</p>
-</footer>
+		<!-- content -->
+		<main role="main"></main>
+	</div>
+</div>
 
 <!-- javascript library -->
 <script src="www/js/main.min.js"></script>
