@@ -21,6 +21,9 @@ module.exports = function(grunt) {
                     'www/css/sidebar.menu-2.min.css': [
                         'node_modules/sidebar-menu-2-compostrap/dist/css/sidebar.menu.css',
                     ],
+                    'www/css/user.logged.min.css': [
+                        'node_modules/user-logged-compostrap/dist/css/user.logged.css',
+                    ],
                 }]
             }
         },
@@ -39,6 +42,13 @@ module.exports = function(grunt) {
                         cwd: 'node_modules/open-sans-fontface/fonts/',
                         src: ['**'],
                         dest: 'www/css/fonts/'
+                    },
+                    {
+                        expand: true,
+                        flatten: true,
+                        src: ['node_modules/user-logged-compostrap/dist/img/**'],
+                        dest: 'www/img/',
+                        filter: 'isFile'
                     },
                 ]
             }

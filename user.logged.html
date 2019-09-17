@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="node_modules/sidebar-skeleton-compostrap/dist/css/sidebar.css">
+	<link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+	<link rel="stylesheet" href="www/css/user.logged.min.css">
+	<title>Sidebar</title>
+</head>
+
+<body>
+
+<header>
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+
+		<!-- title -->
+		<a class="navbar-brand" href="#">Sidebar navigation</a>
+
+		<!-- sidebar toggle -->
+		<button class="navbar-toggler btn btn-link border-0" type="button" id="sidebar" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- user panel -->
+		<div class="collapse navbar-collapse">
+			<ul class="navbar-nav ml-auto">
+
+				<!-- username and avatar -->
+				<li class="nav-item nav-user"><span class="navbar-text mr-2">Accgit</span></li>
+				<li class="nav-item nav-avatar"><img src="www/img/avatar.png" width="34" alt="avatar"></li>
+
+				<!-- dropdown menu -->
+				<li class="nav-item dropdown"><a class="nav-link" href="#" data-toggle="dropdown">
+					<i class="fas fa-angle-down"></i>
+				</a>
+					<div class="dropdown-menu dropdown-menu-right dropdown-menu-bg-light border-0">
+						<div class="dropdown-menu-arrow"></div>
+						<a class="dropdown-item" href="#">Profile</a>
+						<a class="dropdown-item" href="#">Change password</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Private messages</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Sign out</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</header>
+
+<div class="d-flex wrapper wrapper-navbar-used wrapper-navbar-fixed">
+
+	<nav role="navigation" class="sidebar sidebar-bg-light" id="navigation">
+
+		<!-- sidebar -->
+		<div class="sidebar-menu">
+			<div class="sidebar-menu-fixed"></div>
+		</div>
+	</nav>
+
+	<div class="container-fluid">
+
+		<!-- content -->
+		<main role="main"></main>
+	</div>
+</div>
+
+<!-- javascript library -->
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="node_modules/sidebar-skeleton-compostrap/dist/js/sidebar.js"></script>
+
+</body>
+</html>
