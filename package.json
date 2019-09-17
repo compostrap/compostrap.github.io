@@ -4,11 +4,13 @@
   "description": "View demo",
   "main": "Gruntfile.js",
   "dependencies": {
-    "sidebar-skeleton-compostrap": "^1.0.9"
+    "sidebar-menu-compostrap": "^1.0.6",
+    "sidebar-skeleton-compostrap": "^1.0.10"
   },
   "devDependencies": {
     "grunt": "^1.0.4",
     "grunt-contrib-cssmin": "^3.0.0",
-    "grunt-contrib-uglify": "^4.0.1"
+    "grunt-contrib-uglify": "^4.0.1",
+    "grunt-contrib-copy": "^1.0.0"
   }
 }
