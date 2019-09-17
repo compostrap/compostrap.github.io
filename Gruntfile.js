@@ -10,11 +10,16 @@ module.exports = function(grunt) {
                         'node_modules/bootstrap/dist/css/bootstrap.css',
                         'node_modules/sidebar-skeleton-compostrap/dist/css/sidebar.css',
                     ],
-                    'www/css/sidebar.menu.min.css': [
+                    'www/css/sidebar.min.css': [
                         'node_modules/open-sans-fontface/open-sans.css',
                         'node_modules/@fortawesome/fontawesome-free/css/all.css',
                         'node_modules/perfect-scrollbar/css/perfect-scrollbar.css',
+                    ],
+                    'www/css/sidebar.menu.min.css': [
                         'node_modules/sidebar-menu-compostrap/dist/css/sidebar.menu.css',
+                    ],
+                    'www/css/sidebar.menu-2.min.css': [
+                        'node_modules/sidebar-menu-2-compostrap/dist/css/sidebar.menu.css',
                     ],
                 }]
             }
