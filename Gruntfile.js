@@ -22,6 +22,7 @@ module.exports = function(grunt) {
                         'node_modules/sidebar-menu-2-compostrap/dist/css/sidebar.menu.css',
                     ],
                     'www/css/user.logged.min.css': [
+                        'node_modules/@fortawesome/fontawesome-free/css/all.css',
                         'node_modules/user-logged-compostrap/dist/css/user.logged.css',
                     ],
                 }]
