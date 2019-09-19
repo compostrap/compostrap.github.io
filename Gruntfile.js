@@ -6,24 +6,41 @@ module.exports = function(grunt) {
         cssmin: {
             target: {
                 files: [{
-                    'www/css/main.min.css': [
+                    'www/css/skeleton.min.css': [
                         'node_modules/bootstrap/dist/css/bootstrap.css',
                         'node_modules/sidebar-skeleton-compostrap/dist/css/sidebar.css',
                     ],
-                    'www/css/sidebar.min.css': [
+                    'www/css/sidebar.menu.min.css': [
+                        'node_modules/bootstrap/dist/css/bootstrap.css',
+                        'node_modules/sidebar-skeleton-compostrap/dist/css/sidebar.css',
                         'node_modules/open-sans-fontface/open-sans.css',
                         'node_modules/@fortawesome/fontawesome-free/css/all.css',
                         'node_modules/perfect-scrollbar/css/perfect-scrollbar.css',
-                    ],
-                    'www/css/sidebar.menu.min.css': [
                         'node_modules/sidebar-menu-compostrap/dist/css/sidebar.menu.css',
                     ],
-                    'www/css/sidebar.menu-2.min.css': [
+                    'www/css/sidebar.menu.2.min.css': [
+                        'node_modules/bootstrap/dist/css/bootstrap.css',
+                        'node_modules/sidebar-skeleton-compostrap/dist/css/sidebar.css',
+                        'node_modules/open-sans-fontface/open-sans.css',
+                        'node_modules/@fortawesome/fontawesome-free/css/all.css',
+                        'node_modules/perfect-scrollbar/css/perfect-scrollbar.css',
                         'node_modules/sidebar-menu-2-compostrap/dist/css/sidebar.menu.css',
                     ],
                     'www/css/user.logged.min.css': [
+                        'node_modules/bootstrap/dist/css/bootstrap.css',
+                        'node_modules/sidebar-skeleton-compostrap/dist/css/sidebar.css',
                         'node_modules/@fortawesome/fontawesome-free/css/all.css',
                         'node_modules/user-logged-compostrap/dist/css/user.logged.css',
+                    ],
+                    'www/css/dashboard.min.css': [
+                        'node_modules/bootstrap/dist/css/bootstrap.css',
+                        'node_modules/sidebar-skeleton-compostrap/dist/css/sidebar.css',
+                        'node_modules/open-sans-fontface/open-sans.css',
+                        'node_modules/@fortawesome/fontawesome-free/css/all.css',
+                        'node_modules/perfect-scrollbar/css/perfect-scrollbar.css',
+                        'node_modules/sidebar-menu-2-compostrap/dist/css/sidebar.menu.css',
+                        'node_modules/user-logged-compostrap/dist/css/user.logged.css',
+                        'node_modules/dashboard-skeleton-compostrap/dist/css/dashbaord.css',
                     ],
                 }]
             }
