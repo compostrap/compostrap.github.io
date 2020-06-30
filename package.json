@@ -6,12 +6,12 @@
   "dependencies": {
     "dashboard-skeleton-compostrap": "^1.0.3",
     "sidebar-menu-2-compostrap": "^1.0.4",
-    "sidebar-menu-compostrap": "^1.0.8",
-    "sidebar-skeleton-compostrap": "^1.0.12",
+    "sidebar-menu-compostrap": "^1.0.15",
+    "sidebar-skeleton-compostrap": "^1.0.15",
     "user-logged-compostrap": "^1.0.3"
   },
   "devDependencies": {
-    "grunt": "^1.0.4",
+    "grunt": "^1.1.0",
     "grunt-contrib-cssmin": "^3.0.0",
     "grunt-contrib-uglify": "^4.0.1",
     "grunt-contrib-copy": "^1.0.0"
