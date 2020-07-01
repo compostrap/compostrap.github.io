@@ -39,8 +39,7 @@ module.exports = function(grunt) {
                         'node_modules/open-sans-fontface/open-sans.css',
                         'node_modules/@fortawesome/fontawesome-free/css/all.css',
                         'node_modules/perfect-scrollbar/css/perfect-scrollbar.css',
-                        'node_modules/sidebar-menu-2-compostrap/dist/css/sidebar.custom.css',
-                        'node_modules/user-logged-compostrap/dist/css/user.logged.css',
+                        'node_modules/sidebar-menu-compostrap/dist/css/sidebar.menu.css',
                         'node_modules/dashboard-skeleton-compostrap/dist/css/dashbaord.css',
                     ],
                 }]

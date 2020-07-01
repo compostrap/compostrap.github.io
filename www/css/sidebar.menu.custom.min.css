@@ -18,4 +18,4 @@
  * Sidebar menu
  * Copyright Zdeněk Papučík
  * MIT License
-*/.list-hidden{display:none;overflow:hidden;padding-left:0;margin:.3125rem 0 0 1.4375rem;background:0 0!important;border-left:.125rem solid transparent}.sidebar-menu .list-hidden{border-left-color:#4b545c}
+*/.list-hidden{display:none;overflow:hidden;padding-left:0;margin:.3125rem 0 0 1.4375rem;background:0 0!important;border-left:.125rem solid transparent}.sidebar-bg-white .list-hidden{border-left-color:#f0f0f0}.sidebar-bg-light .list-hidden{border-left-color:#e6eaed}.sidebar-bg-dark .list-hidden{border-left-color:#424951}.sidebar-bg-blue .list-hidden{border-left-color:#006ce0}.sidebar-bg-purple .list-hidden{border-left-color:#6138ac}.sidebar-bg-pink .list-hidden{border-left-color:#e5237c}.sidebar-bg-red .list-hidden{border-left-color:#cf2434}.sidebar-bg-orange .list-hidden{border-left-color:#f06e02}.sidebar-bg-green .list-hidden{border-left-color:#228e3b}
