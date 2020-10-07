@@ -96,7 +96,7 @@ module.exports = function(grunt) {
 
     // grunt tasks
     grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-uglify-es');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.registerTask('grunt-run', ['cssmin', 'uglify', 'copy']);
 };
