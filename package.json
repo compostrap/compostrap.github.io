@@ -2,17 +2,60 @@
   "name": "compostrap.github.io",
   "version": "1.0.0",
   "description": "View demo",
-  "main": "Gruntfile.js",
   "dependencies": {
-    "dashboard-skeleton-compostrap": "^1.0.9",
-    "sidebar-menu-2-compostrap": "^1.0.16",
-    "sidebar-menu-compostrap": "^1.0.21",
-    "sidebar-skeleton-compostrap": "^1.0.16"
+    "bootstrap": "^5.1.0",
+    "nanobar": "^0.4.2",
+    "perfect-scrollbar": "^1.5.2",
+    "dashboard-skeleton-compostrap": "^2.0.3",
+    "sidebar-menu-2-compostrap": "^2.0.3",
+    "sidebar-menu-compostrap": "^2.0.5",
+    "sidebar-skeleton-compostrap": "^2.0.6"
   },
   "devDependencies": {
-    "grunt": "^1.3.0",
-    "grunt-contrib-cssmin": "^3.0.0",
-    "grunt-contrib-uglify-es": "^3.3.0",
-    "grunt-contrib-copy": "^1.0.0"
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-custom-dist-structure": "^1.1.18",
+    "parcel-plugin-static-files-copy": "^2.6.0",
+    "sass": "^1.38.1",
+    "serve": "^12.0.0"
+  },
+  "scripts": {
+    "start": "parcel index.html",
+    "watch": "parcel watch index.html",
+    "build": "parcel build pages/*.html --public-url ./ --out-dir dist",
+    "server": "serve --listen 3000"
+  },
+  "customDistStructure": {
+    "config": {
+      "js": [
+        ".js",
+        ".js.map"
+      ],
+      "css": [
+        ".css",
+        ".css.map"
+      ],
+      "fonts": [
+        ".woff",
+        ".woff2",
+        ".svg",
+        ".eot",
+        ".ttf"
+      ],
+      "images": [
+        ".jpg",
+        ".png"
+      ]
+    },
+    "options": {
+      "development": true
+    }
+  },
+  "staticFiles": {
+    "staticPath": [
+      {
+        "staticPath": "dist",
+        "staticOutDir": "../"
+      }
+    ]
   }
 }
