@@ -3,20 +3,59 @@
   "version": "1.0.0",
   "description": "View demo",
   "dependencies": {
-    "dashboard-skeleton-compostrap": "^2.0.3",
+    "bootstrap": "^5.1.0",
     "nanobar": "^0.4.2",
     "perfect-scrollbar": "^1.5.2",
+    "dashboard-skeleton-compostrap": "^2.0.3",
     "sidebar-menu-2-compostrap": "^2.0.3",
     "sidebar-menu-compostrap": "^2.0.5",
     "sidebar-skeleton-compostrap": "^2.0.6"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
-    "sass": "^1.38.1"
+    "parcel-plugin-custom-dist-structure": "^1.1.18",
+    "parcel-plugin-static-files-copy": "^2.6.0",
+    "sass": "^1.38.1",
+    "serve": "^12.0.0"
   },
   "scripts": {
     "start": "parcel index.html",
     "watch": "parcel watch index.html",
-    "build": "parcel build --public-url ./ ./index.html --experimental-scope-hoisting --out-dir build"
+    "build": "parcel build pages/*.html --public-url ./ --out-dir dist",
+    "server": "serve --listen 3000"
+  },
+  "customDistStructure": {
+    "config": {
+      "js": [
+        ".js",
+        ".js.map"
+      ],
+      "css": [
+        ".css",
+        ".css.map"
+      ],
+      "fonts": [
+        ".woff",
+        ".woff2",
+        ".svg",
+        ".eot",
+        ".ttf"
+      ],
+      "images": [
+        ".jpg",
+        ".png"
+      ]
+    },
+    "options": {
+      "development": true
+    }
+  },
+  "staticFiles": {
+    "staticPath": [
+      {
+        "staticPath": "dist",
+        "staticOutDir": "../"
+      }
+    ]
   }
 }

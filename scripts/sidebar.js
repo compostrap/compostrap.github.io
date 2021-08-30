@@ -1,10 +1,11 @@
-import './scss/main.scss'
-
-import bootstrap from "bootstrap";
-import 'sidebar-skeleton-compostrap';
+/* js */
+import './skeleton'
 import 'sidebar-menu-compostrap';
 import Nanobar from 'nanobar';
 import PerfectScrollbar from 'perfect-scrollbar';
+
+/* sass */
+import '../scss/sidebar.scss'
 
 /* scripts */
 document.addEventListener('DOMContentLoaded', () => {
