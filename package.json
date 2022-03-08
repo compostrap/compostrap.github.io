@@ -8,7 +8,7 @@
     "perfect-scrollbar": "^1.5.5",
     "dashboard-skeleton-compostrap": "^2.0.4",
     "sidebar-menu-2-compostrap": "^2.0.5",
-    "sidebar-menu-compostrap": "^2.0.7",
+    "sidebar-menu-compostrap": "^2.0.8",
     "sidebar-skeleton-compostrap": "^2.0.6"
   },
   "devDependencies": {
