@@ -136,4 +136,4 @@ var e;!function(t){"use strict";var n=".nanobar{width:100%;height:4px;z-index:99
 },{"../node_modules/@fortawesome/fontawesome-free/css/all.css":"jE9z","../node_modules/perfect-scrollbar/css/perfect-scrollbar.css":"Gl2A"}],"DCLl":[function(require,module,exports) {
 "use strict";require("./skeleton"),require("sidebar-menu-compostrap");var e=n(require("nanobar")),r=n(require("perfect-scrollbar"));function n(e){return e&&e.__esModule?e:{default:e}}require("../scss/sidebar.scss"),document.addEventListener("DOMContentLoaded",function(){(new e.default).go(100),new r.default(".scrollbar",{wheelSpeed:.3})});
 },{"./skeleton":"y4kX","sidebar-menu-compostrap":"FzJq","nanobar":"GUrX","perfect-scrollbar":"FXNN","../scss/sidebar.scss":"IWEZ"}]},{},["DCLl"], null)
-//# sourceMappingURL=../js/sidebar.6585a815.js.map
+//# sourceMappingURL=js/sidebar.6585a815.js.map

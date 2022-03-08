@@ -138,4 +138,4 @@ var e;!function(t){"use strict";var n=".nanobar{width:100%;height:4px;z-index:99
 },{"./skeleton":"y4kX","sidebar-menu-compostrap":"FzJq","nanobar":"GUrX","perfect-scrollbar":"FXNN","../scss/sidebar.scss":"IWEZ"}],"NDzz":[function(require,module,exports) {
 "use strict";require("./sidebar");
 },{"./sidebar":"DCLl"}]},{},["NDzz"], null)
-//# sourceMappingURL=../js/sidebar.white.gradient.bee172d4.js.map
+//# sourceMappingURL=js/sidebar.white.gradient.bee172d4.js.map

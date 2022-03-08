@@ -123,4 +123,4 @@ document.addEventListener("DOMContentLoaded",()=>{document.getElementById("sideb
 },{}],"y4kX":[function(require,module,exports) {
 "use strict";require("../scss/skeleton.scss"),require("bootstrap"),require("sidebar-skeleton-compostrap");
 },{"../scss/skeleton.scss":"Gl2A","bootstrap":"xqrD","sidebar-skeleton-compostrap":"JkF6"}]},{},["y4kX"], null)
-//# sourceMappingURL=../js/skeleton.ad949fb6.js.map
+//# sourceMappingURL=js/skeleton.ad949fb6.js.map
