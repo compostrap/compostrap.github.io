@@ -4,31 +4,41 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="dist/sidebarMenu.css">
+	<link rel="stylesheet" href="dist/sidebar-skeleton.css">
+	<link rel="stylesheet" href="dist/sidebar-menu.css">
+	<link rel="stylesheet" href="dist/sidebar-menu-custom.css">
 	<title>Sidebar</title>
 </head>
 
-<body class="bg-light">
+<body>
 
 <header>
 	<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
 		<div class="container-fluid">
 
 			<!-- title -->
-			<a class="navbar-brand" href="#"><i class="fa-brands fa-bootstrap px-1 text-danger"></i>
-				<span class="text-danger">Bootstrap menu</span>
+			<a class="navbar-brand" href="#"><i class="fa-brands fa-bootstrap px-1 text-primary"></i>
+				<span class="text-primary">Bootstrap menu</span>
 			</a>
 
-			<!-- sidebar toggle -->
-			<button class="navbar-toggler btn btn-link border-0" type="button" id="sidebar" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+			<div class="ms-auto d-flex align-items-center">
+
+				<!-- theme toggle -->
+				<button class="btn btn-link nav-link py-2 px-0 px-lg-2 border-0" id="theme-toggle" type="button" aria-label="Toggle theme">
+					Switch to light
+				</button>
+
+				<!-- sidebar toggle -->
+				<button class="navbar-toggler btn btn-link border-0 ms-2" type="button" id="sidebar" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
 		</div>
 	</nav>
 </header>
 
 <div class="d-flex wrapper wrapper-navbar-used wrapper-navbar-fixed">
-	<nav role="navigation" class="sidebar sidebar-bg-white-gradient sidebar-rounded-top-right shadow-sm" id="navigation">
+	<nav role="navigation" class="sidebar sidebar-rounded-top-right shadow-soft" data-sidebar-theme="light" id="navigation">
 
 		<!-- sidebar -->
 		<div class="sidebar-menu">
@@ -37,10 +47,10 @@
 			<div class="sidebar-menu-fixed">
 
 				<!-- menu scrollbar -->
-				<div class="scrollbar scrollbar-use-navbar scrollbar-bg-white">
+				<div class="scrollbar scrollbar-use-navbar">
 
 					<!-- menu -->
-					<ul class="list list-unstyled list-bg-white mb-0">
+					<ul class="list list-unstyled mb-0">
 
 						<li class="list-item">
 
@@ -49,12 +59,12 @@
 
 							<!-- list items, first level -->
 							<ul class="list-unstyled">
-								<li><a href="#" class="list-link link-arrow text-uppercase">
-									<span class="list-icon"><i class="fa-regular fa-user bell"></i></span>S. Karlos</a>
+								<li><a href="#" class="list-link link-arrow">
+									<span class="list-icon"><i class="fa-regular fa-user bell"></i></span>S. Carlos</a>
 
 									<!-- list items, second level -->
 									<ul class="list-unstyled list-hidden">
-										<li><a href="#" class="list-link">Your profil</a></li>
+										<li><a href="#" class="list-link">Your profile</a></li>
 										<li><a href="#" class="list-link">Logout</a></li>
 									</ul>
 								</li>
@@ -63,7 +73,7 @@
 					</ul>
 
 					<!-- menu -->
-					<ul class="list list-unstyled list-bg-white list-icon-red mb-0">
+					<ul class="list list-unstyled list-icon-green mb-0">
 
 						<!-- multi-level dropdown menu -->
 						<li class="list-item">
@@ -148,7 +158,7 @@
 										<div class="clearfix">
 											<div class="float-start"><span class="list-icon"><i class="fa-regular fa-bell bell"></i></span>Messages</div>
 											<div class="float-end">
-												<span class="badge bg-danger">New</span>
+												<span class="badge bg-primary">New</span>
 												<span class="badge bg-secondary">4</span>
 											</div>
 										</div>
@@ -183,7 +193,7 @@
 </div>
 
 <!-- javascript library -->
-<script src="dist/sidebarMenu.js" type="module"></script>
+<script type="module" src="dist/sidebar-menu-custom.js"></script>
 
 </body>
 </html>

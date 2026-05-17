@@ -32,10 +32,10 @@ export default defineConfig({
 				assetFileNames: '[name].[ext]',
 			},
 			input: {
-				sidebarSkeleton: path.resolve(__dirname, 'assets/sidebar.skeleton.js'),
-				sidebarMenu: path.resolve(__dirname, 'assets/sidebar.menu.js'),
-				sidebarMenuCustom: path.resolve(__dirname, 'assets/sidebar.menu.custom.js'),
-				sidebarDashboard: path.resolve(__dirname, 'assets/sidebar.dashboard.js'),
+				"sidebar-skeleton": path.resolve(__dirname, 'assets/sidebar-skeleton.js'),
+				"sidebar-menu": path.resolve(__dirname, 'assets/sidebar-menu.js'),
+				"sidebar-menu-custom": path.resolve(__dirname, 'assets/sidebar-menu-custom.js'),
+				"dashboard-skeleton": path.resolve(__dirname, 'assets/dashboard-skeleton.js'),
 			}
 		}
 	}

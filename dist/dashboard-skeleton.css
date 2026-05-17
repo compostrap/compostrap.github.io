@@ -1,0 +1,22 @@
+.nanobar .bar {
+  background-color: #d2d2d2;
+}
+
+.navbar-nav-breadcrumb .nav-link {
+  margin-right: 0.125rem;
+  margin-left: 0.5rem;
+}
+.navbar-nav-breadcrumb li + li:before {
+  font-family: "Font Awesome 7 Free";
+  font-weight: 600;
+  content: "\f105";
+  position: absolute;
+  top: 1.25rem;
+  font-size: 0.875rem;
+  opacity: 0.2;
+}
+
+.content-box {
+  padding: 1.25rem;
+  border-radius: var(--bs-border-radius);
+}

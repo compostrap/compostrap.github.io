@@ -7,14 +7,14 @@
     "nanobar": "^0.4.2",
     "perfect-scrollbar": "^1.5.5",
     "@fortawesome/fontawesome-free": "^7.1.0",
-    "dashboard-skeleton-compostrap": "^2.0.8",
-    "sidebar-menu-compostrap": "^2.0.16",
-	"sidebar-menu-2-compostrap": "^2.0.7",
-    "sidebar-skeleton-compostrap": "^2.0.12"
+    "dashboard-skeleton-compostrap": "^2.1.0",
+    "sidebar-menu-compostrap": "^2.1.1",
+	"sidebar-menu-2-compostrap": "^2.1.1",
+    "sidebar-skeleton-compostrap": "^2.1.1"
   },
   "devDependencies": {
     "sass": "^1.97.1",
-    "vite": "^7.3.0"
+    "vite": "^7.3.3"
   },
   "scripts": {
     "dev": "vite",
