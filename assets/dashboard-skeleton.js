@@ -1,6 +1,9 @@
 import { initSidebarMenu } from "./base/sidebar-menu";
-import "sidebar-menu-2-compostrap/dist/sidebar-custom.css";
-import "dashboard-skeleton-compostrap/dist/dashboard.css";
+import { DashboardSkeleton } from "dashboard-skeleton-compostrap";
+import "sidebar-menu-2-compostrap/sidebar-custom.css";
+import "dashboard-skeleton-compostrap/dashboard.css";
+
 document.addEventListener("DOMContentLoaded", () => {
-	initSidebarMenu();
+	initSidebarMenu({ theme: false });
+	DashboardSkeleton.init();
 });

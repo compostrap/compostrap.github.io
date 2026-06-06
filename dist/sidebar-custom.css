@@ -14,25 +14,24 @@
 }
 .list .list-hidden {
   padding-left: 0;
-  margin: 0.313rem 0 0 1.438rem;
+  margin: 0.313rem 0 0 2.188rem;
   background: none !important;
   border-left: 0.125rem solid transparent;
 }
 
 :root {
   --sm-modern-border-radius: 0.25rem;
+  --sm-modern-icon-color: var(--bs-primary);
 }
 
 [data-sidebar-theme=light] {
   --sm-list-border-color: rgb(239.7, 239.7, 239.7);
   --sm-modern-link-bg: rgba(13, 110, 253, 0.06);
-  --sm-modern-icon-color: #0d6efd;
 }
 
 [data-sidebar-theme=dark] {
   --sm-list-border-color: rgb(65.7172413793, 73.3, 80.8827586207);
   --sm-modern-link-bg: rgba(255, 255, 255, 0.05);
-  --sm-modern-icon-color: #5ea0ff;
 }
 
 .sidebar .list-hidden {
