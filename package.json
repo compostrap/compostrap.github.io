@@ -7,10 +7,10 @@
     "nanobar": "^0.4.2",
     "perfect-scrollbar": "^1.5.5",
     "@fortawesome/fontawesome-free": "^7.1.0",
-    "dashboard-skeleton-compostrap": "^2.2.0",
-    "sidebar-menu-compostrap": "^2.2.0",
-	"sidebar-menu-2-compostrap": "^2.2.0",
-    "sidebar-skeleton-compostrap": "^2.2.0"
+    "dashboard-skeleton-compostrap": "^2.2.1",
+    "sidebar-menu-compostrap": "^2.2.1",
+    "sidebar-menu-2-compostrap": "^2.2.1",
+    "sidebar-skeleton-compostrap": "^2.2.2"
   },
   "devDependencies": {
     "sass": "^1.97.1",
