@@ -12046,7 +12046,7 @@ textarea.form-control-lg {
 }
 /*# sourceMappingURL=bootstrap.css.map */body {
   overflow-x: hidden;
-  background-color: var(--bs-light);
+  background-color: var(--bs-tertiary-bg);
 }
 
 .wrapper {
@@ -12137,14 +12137,6 @@ textarea.form-control-lg {
   outline: none;
 }
 
-[data-sidebar-theme=light] {
-  --sm-sidebar-bg: #fff;
-}
-
-[data-sidebar-theme=dark] {
-  --sm-sidebar-bg: #2b3035;
-}
-
 .sidebar {
-  background-color: var(--sm-sidebar-bg, #fff);
-}
+  background-color: var(--bs-body-bg);
+}/*$vite$:1*/

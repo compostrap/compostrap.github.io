@@ -1,1 +1,1 @@
-import{i as t}from"./sidebar-menu2.js";/* empty css              */import"./sidebar.js";document.addEventListener("DOMContentLoaded",()=>{t()});
+import{t as e}from"./sidebar-menu2.js";/* empty css              */document.addEventListener(`DOMContentLoaded`,()=>{e()});

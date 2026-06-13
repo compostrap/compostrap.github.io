@@ -7,13 +7,8 @@ import "@fortawesome/fontawesome-free/css/all.css";
 import "perfect-scrollbar/css/perfect-scrollbar.css";
 import "sidebar-menu-compostrap/sidebar-menu.css";
 
-export function initSidebarMenu(options = {}) {
-	if (options.theme === false) {
-		initSidebar();
-	} else {
-		initBase();
-	}
-
+export function initSidebarMenu() {
+	initBase();
 	SidebarMenuApp.init();
 	new Nanobar().go(100);
 	const scrollbar = document.querySelector(".scrollbar");
