@@ -36,9 +36,22 @@
 
 			<div class="ms-auto d-flex align-items-center">
 
+				<div class="dropdown custom-dropdown">
+					<a class="btn btn-link dropdown-toggle text-decoration-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<span>Dropdown</span>
+					</a>
+
+					<ul class="dropdown-menu border-0 shadow-sm">
+						<li><a class="dropdown-item" href="#">Action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+						<li><a class="dropdown-item" href="#">Something else here</a></li>
+					</ul>
+				</div>
+
 				<!-- theme toggle -->
-				<button class="btn btn-link nav-link py-2 px-0 px-lg-2 border-0" id="theme-toggle" type="button" aria-label="Toggle theme" data-theme-light-label="Switch to light" data-theme-dark-label="Switch to dark">
-					Switch to light
+				<button type="button" class="btn btn-link nav-link theme-switcher text-decoration-none" data-theme-switcher>
+					<i data-theme-switcher-icon class="fa-solid fa-moon"></i>
+					<span data-theme-switcher-label>Dark mode</span>
 				</button>
 
 				<!-- sidebar toggle -->

@@ -12119,24 +12119,10 @@ textarea.form-control-lg {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.12), 0 10px 30px rgba(0, 0, 0, 0.04), 0 1px 8px rgba(0, 0, 0, 0.02) !important;
 }
 
-#theme-toggle {
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.875rem;
-  color: var(--bs-navbar-color);
-  text-decoration: none;
-  transition: color 0.15s ease-in-out;
-}
-#theme-toggle:hover {
-  color: var(--bs-navbar-hover-color);
-}
-#theme-toggle:focus {
-  box-shadow: none;
-  outline: none;
-}
-
 .sidebar {
   background-color: var(--bs-body-bg);
-}/*$vite$:1*/
+}.theme-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
