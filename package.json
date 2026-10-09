@@ -1,24 +1,24 @@
 {
-  "name": "compostrap.github.io",
-  "version": "1.0.0",
-  "description": "View demo",
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "^7.1.0",
-    "bootstrap": "^5.3.0",
-    "dashboard-skeleton-compostrap": "^3.0",
-    "nanobar": "^0.4.2",
-    "perfect-scrollbar": "^1.5.5",
-    "sidebar-menu-2-compostrap": "^3.0",
-    "sidebar-menu-compostrap": "^3.0",
-    "sidebar-skeleton-compostrap": "^3.0",
-    "theme-switcher-compostrap": "^1.0"
-  },
-  "devDependencies": {
-    "sass": "^1.97.1",
-    "vite": "^8.0.16"
-  },
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build"
-  }
+	"name": "compostrap.github.io",
+	"version": "1.0.0",
+	"description": "View demo",
+	"dependencies": {
+		"@fortawesome/fontawesome-free": "^7.1.0",
+		"bootstrap": "^5.3.0",
+		"dashboard-skeleton-compostrap": "^3.0",
+		"nanobar": "^0.4.2",
+		"perfect-scrollbar": "^1.5.5",
+		"sidebar-menu-2-compostrap": "^3.0",
+		"sidebar-menu-compostrap": "^3.0",
+		"sidebar-skeleton-compostrap": "^3.0",
+		"theme-switcher-compostrap": "^1.0"
+	},
+	"devDependencies": {
+		"sass": "^1.97.1",
+		"vite": "^8.0.16"
+	},
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build"
+	}
 }

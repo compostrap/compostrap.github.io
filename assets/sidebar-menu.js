@@ -1,4 +1,4 @@
-import { initSidebarMenu } from "./base/sidebar-menu";
-document.addEventListener("DOMContentLoaded", () => {
+import { initSidebarMenu } from './base/sidebar-menu';
+document.addEventListener('DOMContentLoaded', () => {
 	initSidebarMenu();
 });
