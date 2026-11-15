@@ -19,6 +19,7 @@
 	},
 	"scripts": {
 		"dev": "vite",
-		"build": "vite build"
+		"build": "vite build",
+		"build:demo": "node scripts/build-demo.mjs"
 	}
 }

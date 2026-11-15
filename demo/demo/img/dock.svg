@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img">
+	<defs>
+		<linearGradient id="d" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0" stop-color="#d9dde2"/>
+			<stop offset="1" stop-color="#a9afb8"/>
+		</linearGradient>
+	</defs>
+	<ellipse cx="215" cy="196" rx="140" ry="5" fill="#000" opacity=".1"/>
+	<path d="M76 150 H40 Q22 150 22 132 V96" fill="none" stroke="#5a606b" stroke-width="7" stroke-linecap="round"/>
+	<rect x="12" y="70" width="20" height="30" rx="4" fill="#8b929e"/>
+	<rect x="72" y="112" width="286" height="76" rx="12" fill="url(#d)"/>
+	<g fill="#2b2f36">
+		<rect x="94" y="140" width="34" height="14" rx="2"/>
+		<rect x="140" y="140" width="34" height="14" rx="2"/>
+		<rect x="186" y="140" width="34" height="14" rx="2"/>
+		<path d="M236 139 H282 V150 L276 157 H242 L236 150 Z"/>
+		<path d="M298 132 H338 V164 H298 Z"/>
+	</g>
+	<g fill="#4f7df5">
+		<rect x="98" y="145" width="26" height="4"/>
+		<rect x="144" y="145" width="26" height="4"/>
+		<rect x="190" y="145" width="26" height="4"/>
+	</g>
+	<rect x="306" y="150" width="24" height="10" fill="#8b929e"/>
+</svg>

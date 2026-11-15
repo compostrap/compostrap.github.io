@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" preserveAspectRatio="xMidYMid slice">
+	<defs>
+		<linearGradient id="haze" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0" stop-color="#d9efd2"/>
+			<stop offset="1" stop-color="#a9d39c"/>
+		</linearGradient>
+	</defs>
+	<rect width="800" height="600" fill="url(#haze)"/>
+	<g fill="#7fb874"><path d="M80 420 L140 200 L200 420 Z"/><path d="M600 420 L670 180 L740 420 Z"/><path d="M300 400 L350 230 L400 400 Z"/></g>
+	<g fill="#4e9150"><path d="M-20 520 L70 170 L160 520 Z"/><path d="M640 520 L740 140 L840 520 Z"/><path d="M170 500 L240 260 L310 500 Z"/><path d="M500 500 L570 250 L640 500 Z"/></g>
+	<path d="M0 470 Q400 420 800 470 L800 600 L0 600 Z" fill="#3f7a43"/>
+	<path d="M360 600 Q380 520 400 450 Q420 520 470 600 Z" fill="#d8c08f"/>
+</svg>
