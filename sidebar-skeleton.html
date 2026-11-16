@@ -12,6 +12,7 @@
 			}
 		} catch (e) { }
 	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="dist/sidebar.css">
 	<title>Sidebar</title>
 </head>
@@ -19,7 +20,7 @@
 <body>
 
 <header>
-	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+	<nav class="navbar navbar-expand-md bg-body-tertiary fixed-top">
 		<div class="container-fluid">
 
 			<!-- title -->
@@ -33,7 +34,7 @@
 				</button>
 
 				<!-- sidebar toggle -->
-				<button class="navbar-toggler btn btn-link border-0 ms-2" type="button" id="sidebar" aria-label="Toggle navigation">
+				<button class="navbar-toggler btn btn-link border-0 ms-2" type="button" id="sidebar" aria-label="Toggle navigation" aria-controls="navigation" aria-expanded="false">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 			</div>
@@ -43,7 +44,7 @@
 
 <div class="d-flex wrapper wrapper-navbar-used wrapper-navbar-fixed">
 
-	<nav role="navigation" class="sidebar shadow-soft" id="navigation">
+	<nav role="navigation" class="sidebar" id="navigation">
 
 		<!-- sidebar -->
 		<div class="sidebar-menu">

@@ -5,13 +5,13 @@
 	"dependencies": {
 		"@fortawesome/fontawesome-free": "^7.1.0",
 		"bootstrap": "^5.3.0",
-		"dashboard-skeleton-compostrap": "^3.0",
+		"dashboard-skeleton-compostrap": "^3.1",
 		"nanobar": "^0.4.2",
 		"perfect-scrollbar": "^1.5.5",
-		"sidebar-menu-2-compostrap": "^3.0",
-		"sidebar-menu-compostrap": "^3.0",
-		"sidebar-skeleton-compostrap": "^3.0",
-		"theme-switcher-compostrap": "^2.0"
+		"sidebar-menu-2-compostrap": "^3.1",
+		"sidebar-menu-compostrap": "^3.1",
+		"sidebar-skeleton-compostrap": "^3.1",
+		"theme-switcher-compostrap": "^2.1"
 	},
 	"devDependencies": {
 		"sass": "^1.97.1",
