@@ -1,1 +1,0 @@
-import{n as e,t}from"./tooltip-CgEQ6vyQ.js";/* empty css                   */import{n,t as r}from"./number-input-FK_zMwNJ.js";document.addEventListener(`DOMContentLoaded`,()=>{new e({lightIcon:`bi bi-sun`,darkIcon:`bi bi-moon`}).initialize(),t.init(),r.init(),n.init()});

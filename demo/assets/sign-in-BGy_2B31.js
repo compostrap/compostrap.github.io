@@ -1,1 +1,0 @@
-import{n as e,t}from"./tooltip-CgEQ6vyQ.js";/* empty css                   */import{n,r,t as i}from"./otp-input-DEQOt9_-.js";document.addEventListener(`DOMContentLoaded`,()=>{new e({lightIcon:`bi bi-sun`,darkIcon:`bi bi-moon`}).initialize(),t.init(),r.init(),n.init(),i.init()});

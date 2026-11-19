@@ -1,0 +1,1 @@
+import{T as i,C as n}from"./tooltip-Rq7Ha5xu.js";/* empty css                   */document.addEventListener("DOMContentLoaded",()=>{new i({lightIcon:"bi bi-sun",darkIcon:"bi bi-moon"}).initialize(),n.init()});
