@@ -39,13 +39,13 @@
 	</style>
 	<title>Empty & loading – Compostrap</title>
 	<meta name="description" content="Empty & loading – a demo page of Compostrap, the Bootstrap 5.3 theme with modules for administrations and websites.">
-  <script type="module" crossorigin src="./assets/states-BbqmclhY.js"></script>
+  <script type="module" crossorigin src="./assets/states-DeeVVg6B.js"></script>
   <link rel="modulepreload" crossorigin href="./assets/tooltip-Rq7Ha5xu.js">
   <link rel="modulepreload" crossorigin href="./assets/perfect-scrollbar.esm-B0SoI0kK.js">
   <link rel="modulepreload" crossorigin href="./assets/number-input-C4SGKGpM.js">
   <link rel="modulepreload" crossorigin href="./assets/otp-input-CX9Ws1xX.js">
   <link rel="stylesheet" crossorigin href="./assets/perfect-scrollbar-CQwwu-JK.css">
-  <link rel="stylesheet" crossorigin href="./assets/compostrap-CxgvwXLm.css">
+  <link rel="stylesheet" crossorigin href="./assets/compostrap-BKKRGGIg.css">
 </head>
 
 <body>
@@ -642,6 +642,26 @@
 				</div>
 			</div>
 
+			<!-- disabled while sent: a link and a submit button cannot send their request twice -->
+			<div class="content-box mb-3">
+				<header class="mb-4 pb-2 border-bottom">
+					<h2 class="h5 mb-1">Disabled while sent</h2>
+					<p class="small text-body-secondary mb-0">A link or a submit button cannot be clicked once more until its request ends.</p>
+				</header>
+				<div class="row g-3">
+					<div class="col-md-6">
+						<p class="fw-medium mb-1">Link</p>
+						<p class="text-body-secondary">aria-disabled="true" grays a plain link out and stops its clicks.</p>
+						<a href="#" data-demo-disable>Load for 2 seconds</a>
+					</div>
+					<div class="col-md-6">
+						<p class="fw-medium mb-1">Submit button</p>
+						<p class="text-body-secondary">The attribute disabled of the button, the look of Bootstrap.</p>
+						<button type="button" class="btn btn-primary btn-sm" data-demo-disable>Save for 2 seconds</button>
+					</div>
+				</div>
+			</div>
+
 			</main>
 
 			<!-- license rights, do not delete this piece of code -->
@@ -661,6 +681,16 @@
 		box.setAttribute('aria-busy', 'true');
 		setTimeout(() => box.removeAttribute('aria-busy'), 2000);
 	});
+
+	// the demo disables a link or a button for two seconds, as the Naja extensions of drago-ui do while a request runs
+	for (const element of document.querySelectorAll('[data-demo-disable]')) {
+		element.addEventListener('click', (event) => {
+			event.preventDefault();
+			const link = element.tagName === 'A';
+			link ? element.setAttribute('aria-disabled', 'true') : element.disabled = true;
+			setTimeout(() => link ? element.removeAttribute('aria-disabled') : element.disabled = false, 2000);
+		});
+	}
 </script>
 
 <!-- the layout of the demo: variants of the navbar and of the brand, tried live and remembered (demo only) -->
